@@ -1,0 +1,27 @@
+// Menghitung total nilai
+const number = [10, 20, 30, 40];
+function calculatorTotal(arr: number[]): number {
+  return arr.reduce((sum, num) => sum + num, 0);
+}
+console.log(calculatorTotal(number));
+
+// Membalik Array
+const fruits = ["apple", "banana", "cherry"];
+function reverseArray<T>(arr: T[]): T[] {
+  return [...arr].reverse();
+}
+console.log(reverseArray(fruits));
+
+// Mencari nilai tertinggi
+const scores = [45, 72, 88, 34, 99];
+function findMax(arr: number[]): number {
+  return Math.max(...arr);
+}
+console.log(findMax(scores));
+
+// Filter angka genap
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+function filterEvenNumbers(arr: number[]): number[] {
+  return arr.filter((num) => num % 2 === 0);
+}
+console.log(filterEvenNumbers(numbers));
